@@ -1,0 +1,99 @@
+{
+   "name": "location2",
+   "label": "Location",
+   "plural": "Locations",
+   "icon": "marker",
+   "description": "Description of Locations.",
+   "dynamic": true,
+   "plugins": [
+      "FileTracking",
+      "DocumentState",
+      "Tags",
+      {
+         "name": "Traces",
+         "options": {
+            "name": true
+         }
+      }
+   ],
+   "schema": [
+      {
+         "name": "name",
+         "label": "Name",
+         "description": "",
+         "type": "TEXT",
+         "editor": "Text"
+      },
+      {
+         "name": "image",
+         "label": "Bild",
+         "description": "",
+         "type": "image",
+         "editor": "Image"
+      },
+      {
+         "name": "date",
+         "label": "Datum",
+         "description": "",
+         "type": "DATE",
+         "editor": "Date"
+      },
+      {
+         "name": "bool",
+         "label": "Boolean",
+         "description": "",
+         "type": "BOOLEAN",
+         "editor": "Check"
+      },
+      {
+         "name": "text",
+         "label": "Text",
+         "description": "",
+         "type": "JSONB",
+         "editor": "RichText"
+      },
+      {
+         "name": "schema",
+         "label": "Schema",
+         "description": "",
+         "type": "JSONB",
+         "editor": "Schema",
+         "schema": {
+            "name": {
+               "label": "Text",
+               "editor": "Text"
+            }
+         }
+      },
+      {
+         "name": "array",
+         "label": "Array",
+         "description": "",
+         "type": "JSONB",
+         "editor": "Schema",
+         "schema": [{
+            "name": {
+               "label": "Text",
+               "editor": "Text"
+            }
+         }]
+      }
+   ],
+   "blocks": [
+      {
+         "label": "Events",
+         "block": "text",
+         "mappings": {
+            "title": "start",
+            "text": "text"
+         }
+      }
+   ],
+   "listView": {
+      "fields": [
+         {
+            "name": "name"
+         }
+      ]
+   }
+}

@@ -1,0 +1,32 @@
+[
+    {
+        "id": "f9e4e0b4-45a4-41e2-8fc8-35b3e14f242a",
+        "email": "user@cryogon.com",
+        "newEmail": null,
+        "name": "Der User",
+        "description": null,
+        "image": {
+            "url": "/img/user_placeholder.png"
+        },
+        "isActive": true,
+        "isAdmin": false,
+        "createdAt": "2016-03-22T00:48:00.583Z",
+        "updatedAt": "2016-05-04T08:42:41.528Z",
+        "deletedAt": null
+    },
+    {
+        "id": "f760021d-4fcc-4f3c-bc7f-ab527a11e04e",
+        "email": "admin@cryogon.com",
+        "newEmail": null,
+        "name": "Der Admin",
+        "description": null,
+        "image": {
+            "url": "/img/user_placeholder.png"
+        },
+        "isActive": true,
+        "isAdmin": true,
+        "createdAt": "2016-03-22T00:48:00.577Z",
+        "updatedAt": "2016-05-04T08:42:41.539Z",
+        "deletedAt": null
+    }
+]

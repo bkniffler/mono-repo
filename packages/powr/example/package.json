@@ -1,0 +1,28 @@
+{
+   "name": "powr-sandbox",
+   "version": "0.0.1",
+   "description": "",
+   "main": "server.js",
+   "scripts": {
+      "run": "npm run build & NODE_ENV=production node server",
+      "build": "gulp build",
+      "debug": "node server"
+   },
+   "author": "",
+   "license": "ISC",
+   "dependencies": {
+      "gulp": "^3.9.0",
+      "powr": "0.0.16",
+      "powr-utils": "0.0.9",
+      "react": "^0.14.6",
+      "react-dom": "^0.14.6",
+      "react-redux": "^4.0.6",
+      "react-router": "^2.0.0-rc4",
+      "redux": "^3.0.5",
+      "sequelize": "^3.17.1",
+      "sqlite3": "^3.1.1"
+   },
+   "devDependencies": {
+      "wrappack": "0.0.3"
+   }
+}

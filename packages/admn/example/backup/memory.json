@@ -1,0 +1,64 @@
+[
+    {
+        "id": "session",
+        "data": {
+            "7SF5krkjCKAbaniQ0PyZ8i16kX7weLea": {
+                "cookie": {
+                    "path": "/",
+                    "expires": null,
+                    "httpOnly": true,
+                    "originalMaxAge": null
+                },
+                "passport": {
+                    "user": "admin"
+                }
+            },
+            "AbWnrb_NiTPVd88tzeFak9aVAFH4EIKW": {
+                "cookie": {
+                    "path": "/",
+                    "expires": null,
+                    "httpOnly": true,
+                    "originalMaxAge": null
+                },
+                "passport": {
+                    "user": "admin"
+                }
+            },
+            "Ro_YksKYIiW8eg0hzSLEVgcRN_wPmvzw": {
+                "cookie": {
+                    "path": "/",
+                    "expires": null,
+                    "httpOnly": true,
+                    "originalMaxAge": null
+                },
+                "passport": {
+                    "user": "admin"
+                }
+            },
+            "v0lOk4ORahLspEDvke5f7STPjHi-Hoep": {
+                "cookie": {
+                    "path": "/",
+                    "expires": null,
+                    "httpOnly": true,
+                    "originalMaxAge": null
+                },
+                "passport": {
+                    "user": "admin"
+                }
+            },
+            "y-r5vWxXr17bdW78yvwMgTIZeYHmd1VS": {
+                "cookie": {
+                    "path": "/",
+                    "expires": null,
+                    "httpOnly": true,
+                    "originalMaxAge": null
+                },
+                "passport": {
+                    "user": "admin"
+                }
+            }
+        },
+        "createdAt": "2016-03-22T01:33:40.438Z",
+        "updatedAt": "2016-05-02T11:50:58.353Z"
+    }
+]

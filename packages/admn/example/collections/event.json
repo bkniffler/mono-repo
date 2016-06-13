@@ -1,0 +1,158 @@
+{
+   "name": "event",
+   "label": "Event",
+   "plural": "Events",
+   "icon": "calendar",
+   "description": "Description of Events.",
+   "dynamic": true,
+   "plugins": [
+      "FileTracking",
+      "Tags",
+      {
+         "name": "Traces",
+         "options": {
+            "name": true
+         }
+      },
+      {
+         "name": "DocumentState",
+         "options": ["name"]
+      }
+   ],
+   "schema": [
+      {
+         "name": "name",
+         "label": "Name",
+         "description": "Der Titel",
+         "type": "TEXT",
+         "editor": "Text"
+      },
+      {
+         "name": "day",
+         "label": "Ganztägig",
+         "description": "Der Titel",
+         "type": "BOOL",
+         "editor": "Check"
+      },
+      {
+         "name": "start",
+         "label": "Start",
+         "description": "Beginn",
+         "type": "DATE",
+         "editor": "Date"
+      },
+      {
+         "name": "end",
+         "label": "Ende",
+         "description": "Beginn",
+         "type": "DATE",
+         "editor": "Date"
+      },
+      {
+         "name": "location",
+         "label": "Ort",
+         "description": "Der Ort",
+         "type": "JSONB",
+         "editor": "Gmap"
+      },
+      {
+         "name": "text",
+         "label": "Text",
+         "description": "Der Text",
+         "type": "JSONB",
+         "editor": "RichText"
+      },
+      {
+         "name": "user",
+         "label": "Benutzer",
+         "description": "Blöcke",
+         "type": "belongsTo(user)",
+         "editor": "Select2"
+      },
+      {
+         "name": "locations",
+         "label": "Orte",
+         "description": "Blöcke",
+         "type": "hasMany(location2)",
+         "editor": "Select2"
+      }
+   ],
+   "showcaseView": {
+      "default": "*,id",
+      "small": "name,start"
+   },
+   "createView": {
+      "default": "*,id",
+      "small": "name,start"
+   },
+   "editView": {
+      "fields": [
+         {
+            "name": "name",
+            "editor": "Text"
+         },
+         {
+            "name": "day",
+            "editor": "Check"
+         },
+         {
+            "name": "start",
+            "editor": "Date"
+         },
+         {
+            "name": "end",
+            "editor": "Date"
+         },
+         {
+            "name": "location",
+            "editor": "Gmap"
+         },
+         {
+            "name": "text",
+            "editor": "RichText"
+         },
+         {
+            "name": "blocks",
+            "editor": "Blocks"
+         },
+         {
+            "name": "user",
+            "editor": "Select2"
+         },
+         {
+            "name": "locations",
+            "editor": "Select2"
+         }
+      ]
+   },
+   "dashboardView": {
+      "default": "*,id",
+      "small": "name,start"
+   },
+   "listView": {
+      "fields": [{
+         "name": "name"
+      },{
+         "name": "start",
+         "format": "DD.MM.YYYY",
+         "small": false
+      },{
+         "name": "end",
+         "format": "DD.MM.YYYY",
+         "small": false
+      },{
+         "name": "location",
+         "small": false
+      }]
+   },
+   "blockView": [
+      {
+         "name": "Events",
+         "block": "text",
+         "mappings": {
+            "title": "start",
+            "text": "text"
+         }
+      }
+   ]
+}

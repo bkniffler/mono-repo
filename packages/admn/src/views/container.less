@@ -1,0 +1,316 @@
+@import "../styles/theme";
+
+:global {
+  .ui.table {
+    background-color: #ffffff
+  }
+
+  .draft-tooltip {
+    z-index: 100 !important;
+  }
+
+  .ui.full.inverted.cms-nav {
+    overflow-y: scroll;
+    //width: 67px;
+    width: 80px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #333333;
+
+    &.animated {
+      //background: linear-gradient(90deg, #4A255D, #2C4573, #2C7B82);
+      //animation: MoveBG 60s ease infinite;
+      //backgroundSize: 500% 200%;
+
+      @color1: spin(@brand-primary, 45);
+      @color2: @brand-primary;
+      @color3: spin(@brand-primary, -45);
+
+      background: linear-gradient(230deg, @color1, @color2, @color3);
+      animation: MoveBG 60s ease infinite;
+      background-size: 500% 500%;
+    }
+
+    .item:hover {
+      background: rgba(255,255,255,.08);
+    }
+
+    .item.active {
+      background-color: rgba(0,0,0,.16);
+      outline: 1px solid rgba(255,255,255,.16);
+    }
+
+    i {
+      height: 17px;
+    }
+  }
+
+  .menu_item.cms_nav {
+    width: 80px;
+    background-color: fade(@brand-primary, 75%);
+    text-align: center;
+    line-height: 1;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 200px;
+
+    i {
+      height: 17px;
+    }
+
+    a {
+      color: #FFF;
+      display: block;
+    }
+
+    a:hover {
+      background-color: @brand-primary;
+    }
+  }
+
+  .with-cms-nav {
+    //margin-left: 67px;
+    margin-left: 80px;
+  }
+
+  .ui.form {
+    .ui.form input:not([type]), .ui.form input[type=text], .ui.form input[type=email], .ui.form input[type=search], .ui.form input[type=password], .ui.form input[type=date], .ui.form input[type=datetime-local], .ui.form input[type=tel], .ui.form input[type=time], .ui.form input[type=url], .ui.form input[type=number], *[data-medium-editor-element="true"] {
+      font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+      margin: 0;
+      outline: 0;
+      -webkit-appearance: none;
+      tap-highlight-color: rgba(255, 255, 255, 0);
+      line-height: 1.2142em;
+      padding: .67861429em 1em;
+      font-size: 1em;
+      background: #FFF;
+      border: 1px solid rgba(34, 36, 38, .15);
+      color: rgba(0, 0, 0, .87);
+      border-radius: .28571429rem;
+      box-shadow: 0 0 0 0 transparent inset;
+      -webkit-transition: color .1s ease, border-color .1s ease;
+      transition: color .1s ease, border-color .1s ease;
+    }
+  }
+
+  .ui.navi.simple.dropdown.active .menu {
+    display: none;
+  }
+
+  .ui.navi.simple.dropdown.active:hover .menu {
+    display: block;
+  }
+
+  .ui.full.vertical.menu, .full.ui.segment {
+    border-bottom: 0;
+    border-top: 0;
+  }
+
+  @-webkit-keyframes MoveBG {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+  }
+
+  @-moz-keyframes MoveBG {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+  }
+
+  @keyframes MoveBG {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+  }
+
+  .ui.vertical.menu .dropdown.item .menu {
+    border-radius: 0;
+  }
+
+  [contenteditable="true"]:focus {
+    outline: none;
+  }
+
+  .full {
+    height: 100% !important;
+  }
+
+  .full-w {
+    width: 100% !important;
+  }
+
+  .full-h {
+    height: 100% !important;
+  }
+
+  .full-wh {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .no-margin {
+    margin: 0 !important;
+  }
+
+  .no-spacing {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .no-spacing-top {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .ui.card, .ui.cards > .card {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    border: 1px solid #aeaeae;
+    &.active {
+      border: 1px solid #A333C8;
+    }
+    .image {
+      border-radius: 0 !important;
+    }
+  }
+
+  .ui.popup {
+    max-height: 400px;
+    overflow-y: scroll;
+  }
+
+  .ui.segment.basic {
+    background-color: transparent;
+  }
+
+  .Select.is-multi > .Select-control > .Select-input {
+    > input {
+      margin: 0;
+      outline: 0;
+      -webkit-appearance: none;
+      line-height: inherit;
+      padding: 0;
+      font-size: inherit;
+      background: transparent;
+      border: 0;
+      color: inherit;
+      border-radius: 0;
+      box-shadow: none;
+    }
+  }
+
+  .ui.inverted.main.menu .item:before, .ui.vertical.inverted.menu .item:before {
+    background: transparent;
+  }
+
+  .cms-toolbar .ui.label {
+    width: 100px;
+  }
+
+  .hidden-icon {
+    position: relative;
+    &:hover {
+      > .icon {
+        display: block !important;;
+      }
+    }
+    &.node {
+      > .icon {
+        top: 4px !important;
+      }
+    }
+    &.header {
+      > .icon {
+        top: -2px !important;
+      }
+    }
+    > .icon {
+      color: gray;
+      position: absolute !important;
+      right: -12px !important;
+      top: 0px !important;
+      font-size: 1rem !important;
+      cursor: pointer !important;
+      display: none !important;
+    }
+  }
+
+  .dimmable:hover {
+    .dimmer {
+      opacity: 1 !important;
+      display: block !important;
+      visibility: visible !important;
+    }
+  }
+
+  .modal {
+    outline: none;
+  }
+
+  .image-comment {
+    opacity: 0.5;
+    font-style: italic;
+    font-family: "Times New Roman";
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .collectionHolder {
+    //background-color: darken(@brand-primary, 10%);
+    border: 1px solid #FFF;
+    border-width: 1px 0;
+  }
+
+  .full-h, .__Dropzone {
+    min-height: 100%;
+  }
+
+  .ui.dimmer {
+    z-index: 101;//4;
+  }
+
+  .ui.dimmer.modals.page.transition.visible.active {
+    overflow: auto !important;
+  }
+
+  .modalWithoutBorderOuter {
+    overflow: visible;
+
+    div {
+      outline: none !important;
+      width: 760px;
+      margin: 0 auto;
+    }
+
+    .modalWithoutBorderInner {
+      div {
+        width: initial;
+        margin: initial;
+      }
+    }
+  }
+}

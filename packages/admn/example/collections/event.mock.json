@@ -1,0 +1,29 @@
+{
+   "name": "event",
+   "mock": [{
+      "id": "V1mtC7rH7g",
+      "name": "Testtermin",
+      "start": "2015-03-25T12:00:00",
+      "text": "Hallowelt"
+   },{
+      "id": "V1mtC7rHag",
+      "name": "Beni",
+      "start": "2015-03-25T12:00:00",
+      "text": "Hallowelt"
+   },{
+      "id": "V1mtC7rH7a",
+      "name": "Beni Chris",
+      "start": "2015-03-25T12:00:00",
+      "text": "Hallowelt"
+   },{
+      "id": "V1mtC7rH7b",
+      "name": "Chris",
+      "start": "2015-03-25T12:00:00",
+      "text": null
+   },{
+      "id": "V1mtC7rH7c",
+      "name": "Philipp",
+      "start": "2015-03-25T12:00:00",
+      "text": null
+   }]
+}

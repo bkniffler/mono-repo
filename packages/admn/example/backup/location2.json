@@ -1,0 +1,36 @@
+[
+    {
+        "id": "X1mtC7rH7g",
+        "name": "Location 1",
+        "image": null,
+        "date": null,
+        "bool": null,
+        "text": null,
+        "schema": null,
+        "array": null,
+        "createdAt": "2016-03-25T08:54:22.761Z",
+        "updatedAt": "2016-03-25T08:54:22.761Z",
+        "deletedAt": null,
+        "isPublished": false,
+        "isValid": false,
+        "tags": [],
+        "eventId": null
+    },
+    {
+        "id": "U1mtC7rH7g",
+        "name": "Location 2",
+        "image": null,
+        "date": null,
+        "bool": null,
+        "text": null,
+        "schema": null,
+        "array": null,
+        "createdAt": "2016-03-25T08:54:22.763Z",
+        "updatedAt": "2016-03-25T08:54:22.763Z",
+        "deletedAt": null,
+        "isPublished": false,
+        "isValid": false,
+        "tags": [],
+        "eventId": null
+    }
+]

@@ -1,0 +1,10 @@
+{
+   "name": "location2",
+   "mock": [{
+      "id": "X1mtC7rH7g",
+      "name": "Location 1"
+   },{
+      "id": "U1mtC7rH7g",
+      "name": "Location 2"
+   }]
+}

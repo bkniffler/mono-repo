@@ -1,0 +1,70 @@
+@import "../../styles/theme";
+
+:global {
+
+  .login {
+    .ui.button {
+      background-color: @brand-primary;
+    }
+    .ui.button:hover {
+      background-color: lighten(@brand-primary, 5%);
+    }
+
+    .ui.button when (lightness(@brand-primary) > 50%) {
+      color: #000;
+    }
+
+    .ui.button when (lightness(@brand-primary) <= 50%) {
+      color: #FFF;
+    }
+
+    .ui.divider {
+      color: #FFF;
+    }
+  }
+
+  /* Background */
+
+  .animatedBG {
+    @color1: spin(@brand-primary, 45);
+    @color2: @brand-primary;
+    @color3: spin(@brand-primary, -45);
+
+    //background: linear-gradient(230deg, #a24bcf, #4b79cf, #4bc5cf);
+    background: linear-gradient(230deg, @color1, @color2, @color3);
+    animation: MoveBG 60s ease infinite;
+    background-size: 200% 200%;
+    margin: 0;
+  }
+
+  /*
+  .gradient1 {
+    background: linear-gradient(to right bottom, #f1c40f 0%, #e74c3c 100%);
+  }
+
+  .gradient2 {
+    background: linear-gradient(to bottom, #2980b9 0%, #1abc9c 100%);
+  }
+
+  .gradient3 {
+    background: linear-gradient(to right bottom, #c0392b 0%, #34495e 100%);
+  }
+
+  .gradient4 {
+    background: -webkit-radial-gradient(center, ellipse cover, #aaaaaa 0%, #707070 100%);
+  }
+
+  .gradient5 {
+    background: linear-gradient(to bottom, #ffffff 0%, #f1c40f 50%, #e74c3c 100%);
+  }
+
+  .gradient6 {
+    background: linear-gradient(to right top, #8e44ad 0%, #3498db 100%);
+  }
+
+  .gradient7 {
+    background: linear-gradient(90deg, #005C97 10%, #363795 90%);
+  }
+  */
+
+}

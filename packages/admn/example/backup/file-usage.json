@@ -1,0 +1,26 @@
+[
+    {
+        "url": "https://res.cloudinary.com/dhsf4vjjc/image/upload/v1458642014/powr/qkmfffutc6tyosf2z4xh.jpg",
+        "model": "location2",
+        "documentId": "X1mtC7rH7g",
+        "id": "61e17606-f6d7-4cc4-8c59-6db0d7776365",
+        "createdAt": "2016-03-24T12:22:49.040Z",
+        "updatedAt": "2016-03-24T12:22:49.040Z"
+    },
+    {
+        "url": "https://res.cloudinary.com/dhsf4vjjc/image/upload/v1458744291/powr/yrhm50wdy0xel7rt8ixe.jpg",
+        "model": "page",
+        "documentId": "Vk0cY9opx",
+        "id": "f5cecb22-1f10-4b46-9620-82ec800073b9",
+        "createdAt": "2016-05-04T08:04:46.972Z",
+        "updatedAt": "2016-05-04T08:04:46.972Z"
+    },
+    {
+        "url": "https://res.cloudinary.com/dhsf4vjjc/image/upload/v1458744291/powr/yrhm50wdy0xel7rt8ixe.jpg",
+        "model": "location2",
+        "documentId": "U1mtC7rH7g",
+        "id": "1c9467cd-4f88-4530-8b9f-cc31664fdea9",
+        "createdAt": "2016-03-24T13:45:56.345Z",
+        "updatedAt": "2016-03-24T13:45:56.345Z"
+    }
+]
