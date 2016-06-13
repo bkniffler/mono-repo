@@ -1,6 +1,6 @@
 {
   "name": "admn",
-  "version": "0.8.20",
+  "version": "0.8.21",
   "description": "",
   "main": "./lib",
   "engines": {
@@ -51,7 +51,7 @@
     "mobx-react-devtools": "^4.0.2",
     "pg": "^4.4.3",
     "pg-hstore": "^2.3.2",
-    "powr": "^0.8.20",
+    "powr": "^0.8.21",
     "react": "^15.0.2",
     "react-dom": "^15.0.2",
     "react-router": "^2.0.0-rc5",
