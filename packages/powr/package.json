@@ -1,6 +1,6 @@
 {
   "name": "powr",
-  "version": "0.8.23",
+  "version": "0.8.24",
   "description": "powr framework",
   "engines": {
     "node": "5.x.x",
